@@ -1,86 +1,85 @@
-body {
+/*/* 🌈 PAGE BACKGROUND */
+body{
   margin: 0;
-  min-height: 100vh;
+  height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
   display: flex;
   flex-direction: column;
-  align-items: center;   /* 🔥 centers everything horizontally */
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
-/* 🔒 PERFECTLY FIXED CENTER BOX */
-.container{
-  position: fixed;              /* 🔒 never moves */
-  top: 50%;                      /* center vertically */
-  left: 50%;                     /* center horizontally */
-  transform: translate(-50%, -50%); /* exact center */
-  
-  width: 340px;
-  max-width: 90%;
-  padding: 22px;
-  text-align: center;
 
+/* 🔒 FIXED WEATHER BOX (CENTERED) */
+.container{
+  position: fixed;          /* 🔒 NO MOVING */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;             /* 🔼 BOX SIZE */
+  max-width: 92%;
+  padding: 30px;
+  text-align: center;
   background: rgba(255,255,255,0.25);
   backdrop-filter: blur(12px);
   border-radius: 22px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
-  }
-/* 🔒� DATE & TI
-#datetime t
-   {
-  : #ffffff;
-  f;
-  font: ize: 1;
-  m;
-  margin-b: tom:;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
 }
 
-/* 📥 INPUT + BUTTON SAME LINE */
-.input-group {
+/* 🌟 HEADING */
+.container h1{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+/* 📅 DATE & TIME */
+#datetime{
+  color: #f1f1f1;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+/* 📥 INPUT + BUTTON SAME SIZE */
+.row{
   display: flex;
-  margin-bottom: 15px;
+  gap: 10px;
 }
 
-input {
+.row input,
+.row button{
   flex: 1;
-  padding: 12px;
+  padding: 14px;
+  border-radius: 20px;
   border: none;
-  outline: none;
-  border-radius: 25px 0 0 25px;
   font-size: 16px;
-  text-align: center;   /* 🔒 TEXT CENTER */
+  text-align: center;
 }
 
-button {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 0 25px 25px 0;
+/* 🎯 BUTTON STYLE */
+.row button{
   background: white;
   color: #2196f3;
   font-weight: bold;
   cursor: pointer;
-  font-size: 16px;
 }
 
-button:hover {
-  background: #2196f3;
+/* 🌦 RESULT TEXT */
+#result{
+  margin-top: 18px;
   color: white;
+  font-size: 18px;
 }
 
-/* 🌦 WEATHER RESULT */
-#result {
-  margin-top: 10px;
-  color: white;
-  font-size: 1.1rem;
-}
-
-/* 🌈 STAY TUNED (OUTSIDE BOX) */
-#motivation {
+/* 🌈 OUTSIDE TEXT (BELOW BOX) */
+#note{
   position: fixed;
-  bottom: 30px;      /* 🔒 BELOW BOX */
-  width: 100%;
+  top: calc(50% + 260px);   /* 👈 pushes below box */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 14px;
+  opacity: 0.9;
   text-align: center;
-  font-size: 1.1rem;
-  color: yellow;
-  text-shadow: 0 0 6px black;
-  }
-
+}￼Enter
