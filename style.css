@@ -7,33 +7,46 @@ body {
   background: linear-gradient(to right, #4facfe, #00f2fe);
   font-family: Arial, sans-serif;
 }
-
-/* 🔒 FIXED WEATHER BOX */
-.container {
-  margin-top: 60px;
-  width: 320px;
+/* 🔒 PERFECTLY FIXED CENTER BOX */
+.container{
+  position: fixed;              /* 🔒 never moves */
+  top: 50%;                      /* center vertically */
+  left: 50%;                     /* center horizontally */
+  transform: translate(-50%, -50%); /* exact center */
+  
+  width: 340px;
   max-width: 90%;
-  padding: 20px;
+  padding: 22px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
 
-/* 🌟 OUTSIDE TEXT (CENTERED) */
-.footer-text {
-  margin-top: 20px;     /* 👈 space BELOW box */
-  text-align: center;
-  color: white;
-  font-size: 14px;
-  opacity: 0.9;
-                        }
-/* 🕒 DATE & TIME */
-#datetime {
-  color: #ffffff;
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+  }
+/* 🔒 FIXED WEATHER BOX */
+� OUTSIDE TEXT (CENTERED) */
+.footer-text t
+   {
+  margi: top:;          /* 👈 space BELOW b
+  */
+  text-: ign: c;
+  r;
+  : lor: ;
+  e;
+  font: ize:;
+  x;
+  op: ity;
+                         
+   }
+/* 🕒 DATE & TI
+#datetime t
+   {
+  : #ffffff;
+  f;
+  font: ize: 1;
+  m;
+  margin-b: tom:;
 }
 
 /* 📥 INPUT + BUTTON SAME LINE */
