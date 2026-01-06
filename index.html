@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="container">
+
+  <h1>💫 Starglow Weather</h1>
+
+  <div id="datetime"></div>
+
+  <div class="input-group">
+
+    <input id="city" placeholder="Enter city">
+
+    <button onclick="getWeather()">Get Weather</button>
+
+  </div>
+
+  <div id="result">🌍 Enter a city to see weather</div>
+
+</div>
+
+<div id="message">Stay tuned and enjoy your day! 🌈</div>
+<script>
+
+const colors = [
+
+  "#4facfe", // blue
+
+  "#00f2fe", // cyan
+
+  "#43e97b", // green
+
+  "#fbc2eb", // pink
+
+  "#fda085"  // orange
+
+];
+
+let i = 0;
+
+function changeColor() {
+
+  document.body.style.background = colors[i];
+
+  i = (i + 1) % colors.length; // loop back to first color
+
+}
+
+// Change color every 4 seconds only when normal page without search time
+
+setInterval(changeColor, 4000);
+
+// Initial call
+
+changeColor();
+
+</script>
+<footer>
+
+  Made with ❤️ by Starglow  
+
+</footer>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

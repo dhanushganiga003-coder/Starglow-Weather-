@@ -1,0 +1,153 @@
+body{
+
+  margin:0;
+
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(to right,#4facfe,#00f2fe);
+
+  height:100vh;
+
+  overflow:hidden;
+
+}
+
+/* 🔒 FIXED WEATHER BOX */
+
+.container{
+
+  position: fixed;
+
+  top: 40px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 320px;
+
+  max-width: 90%;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background: rgba(255,255,255,0.25);
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+/* TITLE */
+
+h1{
+
+  color:#fff;
+
+  margin-bottom:10px;
+
+}
+
+/* DATE & TIME */
+
+#datetime{
+
+  color:#fff;
+
+  margin-bottom:15px;
+
+}
+
+/* INPUT & BUTTON SAME LINE */
+
+.input-group{
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+input{
+
+  flex: 1;
+
+  padding:10px;
+
+  border-radius:20px;
+
+  border:none;
+
+  text-align:center;
+
+  font-size:16px;
+
+  margin-right:8px;
+
+}
+
+button{
+
+  padding:10px 15px;
+
+  border-radius:20px;
+
+  border:none;
+
+  background:#fff;
+
+  color:#2196f3;
+
+  font-weight:bold;
+
+  font-size:16px;
+
+}
+
+/* RESULT */
+
+#result{
+
+  margin-top:15px;
+
+  color:#fff;
+
+  font-weight:bold;
+
+}
+
+/* OUTSIDE MESSAGE */
+
+#message{
+
+  margin-top:320px; /* below box */
+
+  text-align:center;
+
+  color:#fff;
+
+  font-size:1.2em;
+
+  font-weight:bold;
+
+}
+footer{
+
+  position: fixed;
+
+  bottom: 10px;
+
+  width: 100%;
+
+  text-align: center;
+
+  color: rgba(255,255,255,0.8);
+
+  font-size: 13px;
+
+}
+/*
