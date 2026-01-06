@@ -1,137 +1,88 @@
-body{
-
-  margin:0;
-
+/* 🌈 FULL PAGE CENTER */
+body {
+  margin: 0;
   font-family: Arial, sans-serif;
-
-  background: linear-gradient(to right,#4facfe,#00f2fe);
-
-  height:100vh;
-
-  overflow:hidden;
-
-}
-
-/* 🔒 FIXED WEATHER BOX */
-container {
-  position: fixed;           /* keeps the box in place */
-  top: 40px;                 /* distance from top */
-  left: 50%;                 /* center horizontally */
-  transform: translateX(-50%);
-  width: 350px;              /* box width */
-  max-width: 90%;            /* responsive for mobile */
-  padding: 20px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.25); /* frosted glass effect */
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  z-index: 999;              /* stay above other elements */
-}
-
-/* Heading inside the box */
-.container h1 {
-  color: #fff;
-  margin-bottom: 10px;
-  font-size: 1.5em;
-  }  
-
-/* DATE & TIME */
-
-#datetime{
-
-  color:#fff;
-
-  margin-bottom:15px;
-
-}
-
-/* INPUT & BUTTON SAME LINE */
-
-.input-group{
-
+  height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
   display: flex;
-
   justify-content: center;
-
+  align-items: center;   /* 🔒 CENTER MIDDLE */
 }
 
-input{
-
-  flex: 1;
-
-  padding:10px;
-
-  border-radius:20px;
-
-  border:none;
-
-  text-align:center;
-
-  font-size:16px;
-
-  margin-right:8px;
-
-}
-
-button{
-
-  padding:10px 15px;
-
-  border-radius:20px;
-
-  border:none;
-
-  background:#fff;
-
-  color:#2196f3;
-
-  font-weight:bold;
-
-  font-size:16px;
-
-}
-
-/* RESULT */
-
-#result{
-
-  margin-top:15px;
-
-  color:#fff;
-
-  font-weight:bold;
-
-}
-
-/* OUTSIDE MESSAGE */
-
-#message{
-
-  margin-top:320px; /* below box */
-
-  text-align:center;
-
-  color:#fff;
-
-  font-size:1.2em;
-
-  font-weight:bold;
-
-}
-footer{
-
-  position: fixed;
-
-  bottom: 10px;
-
-  width: 100%;
-
+/* 🔒 MAIN WEATHER BOX */
+.container {
+  width: 420px;          /* BIG BOX */
+  max-width: 90%;
+  padding: 30px;
   text-align: center;
-
-  color: rgba(255,255,255,0.8);
-
-  font-size: 13px;
-
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
-/*
+
+/* 🌟 HEADING */
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #fff, 0 0 25px #00f2fe;
+}
+
+/* 🕒 DATE & TIME */
+#datetime {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* 📥 INPUT + BUTTON SAME LINE */
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 25px 0 0 25px;
+  font-size: 16px;
+  text-align: center;   /* 🔒 TEXT CENTER */
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background: white;
+  color: #2196f3;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #2196f3;
+  color: white;
+}
+
+/* 🌦 WEATHER RESULT */
+#result {
+  margin-top: 10px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* 🌈 STAY TUNED (OUTSIDE BOX) */
+#motivation {
+  position: fixed;
+  bottom: 30px;      /* 🔒 BELOW BOX */
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  color: yellow;
+  text-shadow: 0 0 6px black;
+  }
+
