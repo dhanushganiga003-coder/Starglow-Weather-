@@ -13,44 +13,28 @@ body{
 }
 
 /* 🔒 FIXED WEATHER BOX */
-
-.container{
-
-  position: fixed;
-
-  top: 40px;
-
-  left: 50%;
-
+container {
+  position: fixed;           /* keeps the box in place */
+  top: 40px;                 /* distance from top */
+  left: 50%;                 /* center horizontally */
   transform: translateX(-50%);
-
-  width: 320px;
-
-  max-width: 90%;
-
+  width: 350px;              /* box width */
+  max-width: 90%;            /* responsive for mobile */
   padding: 20px;
-
   text-align: center;
-
-  background: rgba(255,255,255,0.25);
-
+  background: rgba(255, 255, 255, 0.25); /* frosted glass effect */
   backdrop-filter: blur(10px);
-
   border-radius: 20px;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 999;              /* stay above other elements */
 }
 
-/* TITLE */
-
-h1{
-
-  color:#fff;
-
-  margin-bottom:10px;
-
-}
+/* Heading inside the box */
+.container h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  }  
 
 /* DATE & TIME */
 
