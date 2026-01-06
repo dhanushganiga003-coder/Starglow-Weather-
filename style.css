@@ -1,32 +1,43 @@
-/*/* 🌈 PAGE BACKGROUND */
+/* FULL PAGE CENTER */
 body{
-  margin: 0;
-  height: 100vh;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  margin:0;
+  font-family: Arial, sans-serif;
+  min-height:100vh;
+  background: linear-gradient(to right,#4facfe,#00f2fe);
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
-/* 🔒 FIXED WEATHER BOX (CENTERED) */
+/* 🔒 FIXED WEATHER BOX */
 .container{
-  position: fixed;          /* 🔒 NO MOVING */
+  position: fixed;        /* 🔒 FIX */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 420px;             /* 🔼 BOX SIZE */
-  max-width: 92%;
-  padding: 30px;
+
+  width: 360px;           /* BIG BOX */
+  max-width: 90%;
+  padding: 25px;
+
   text-align: center;
   background: rgba(255,255,255,0.25);
   backdrop-filter: blur(12px);
   border-radius: 22px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+
+  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
 
+/* STAY TUNED – BELOW BOX */
+.stay{
+  margin-top: 280px;   /* 👈 PUSHES IT BELOW FIXED BOX */
+  color: white;
+  font-size: 15px;
+  opacity: 0.9;
+  text-align: center;
+    }
 /* 🌟 HEADING */
 .container h1{
   color: white;
