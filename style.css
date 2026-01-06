@@ -1,51 +1,36 @@
-/* FULL PAGE CENTER */
-body{
-  margin:0;
+/* BODY & BACKGROUND */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
   font-family: Arial, sans-serif;
-  min-height:100vh;
-  background: linear-gradient(to right,#4facfe,#00f2fe);
-
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
 }
 
-/* 🔒 FIXED WEATHER BOX */
-.container{
-  position: fixed;        /* 🔒 FIX */
+/* 🔒 FIXED CENTER BOX */
+.container {
+  width: 400px;              /* bigger container */
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.25); /* glass effect */
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  position: fixed;            /* FIXED IN MIDDLE */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  width: 360px;           /* BIG BOX */
-  max-width: 90%;
-  padding: 25px;
-
-  text-align: center;
-  background: rgba(255,255,255,0.25);
-  backdrop-filter: blur(12px);
-  border-radius: 22px;
-
-  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
 }
 
-/* STAY TUNED – BELOW BOX */
-.stay{
-  margin-top: 280px;   /* 👈 PUSHES IT BELOW FIXED BOX */
+/* TITLE */
+.container h1 {
+  margin: 0 0 15px;
+  font-size: 28px;
   color: white;
-  font-size: 15px;
-  opacity: 0.9;
-  text-align: center;
-    }
-/* 🌟 HEADING */
-.container h1{
-  color: white;
-  margin-bottom: 10px;
-  font-size: 26px;
 }
 
-/* 📅 DATE & TIME */
 #datetime{
   color: #f1f1f1;
   margin-bottom: 18px;
@@ -82,15 +67,11 @@ body{
   color: white;
   font-size: 18px;
 }
-
-/* 🌈 OUTSIDE TEXT (BELOW BOX) */
-#note{
-  position: fixed;
-  top: calc(50% + 260px);   /* 👈 pushes below box */
-  left: 50%;
-  transform: translateX(-50%);
+/* OUTSIDE MESSAGE BELOW BOX */
+.stay-tuned {
+  margin-top: 20px;           /* distance from container box */
   color: white;
-  font-size: 14px;
-  opacity: 0.9;
   text-align: center;
-}
+  font-size: 18px;
+                               }
+
