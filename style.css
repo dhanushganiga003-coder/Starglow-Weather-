@@ -36,6 +36,12 @@ body{
   font-size: 18px;
   text-align: center;
   }
+.title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
 
 #datetime{
   color: #f1f1f1;
