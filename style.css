@@ -1,41 +1,31 @@
-/* 🔒 STOP PAGE MOVEMENT */
 body{
   margin:0;
   height:100vh;
-  overflow:hidden;          /* ❌ no scroll */
-  background: linear-gradient(135deg,#4facfe,#00f2fe);
-  font-family: Arial, sans-serif;
+  overflow:hidden;   /* 🔒 stops movement completely */
 }
 
 /* 🔒 FIXED & CENTERED WEATHER BOX */
 .container{
-  position: fixed;          /* 🔒 KEY LINE */
+  position: fixed;                 /* 🔒 fixed */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  /* exact center */
-  
-  width: 420px;             /* BIG BOX */
-  max-width: 90%;
-  padding: 30px;
+  transform: translate(-50%, -50%);
 
-  background: rgba(255,255,255,0.25);
-  backdrop-filter: blur(12px);
-  border-radius: 25px;
-  text-align: center;
+  width: 460px;                    /* 🔥 BIGGER BOX */
+  max-width: 92%;
+  min-height: 420px;               /* makes it tall */
 
-  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-}
+  padding: 35px;
 
-/* 🔒 STAY TUNED BELOW BOX */
-.stay-tuned{
-  position: fixed;          /* 🔒 FIXED ALSO */
-  top: calc(50% + 260px);   /* below box */
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 18px;
+  background: rgba(255,255,255,0.28);
+  backdrop-filter: blur(14px);
+
+  border-radius: 26px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.4);
+
   text-align: center;
   }
+
 .title{
   font-size: 20px;
   font-weight: 600;
@@ -55,8 +45,7 @@ body{
   gap: 10px;
 }
 
-.row input,
-.row button{
+.row input,.row button{
   flex: 1;
   padding: 14px;
   border-radius: 20px;
@@ -80,4 +69,14 @@ body{
   font-size: 18px;
 }
 
+/* 🔒 STAY TUNED BELOW BOX */
+.stay-tuned{
+  position: fixed;          /* 🔒 FIXED ALSO */
+  top: calc(50% + 260px);   /* below box */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  }
 
