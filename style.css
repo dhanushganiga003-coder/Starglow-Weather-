@@ -23,13 +23,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 /* TITLE */
 .container h1 {
-  margin: 0 0 15px;
-  font-size: 28px;
+  margin: 0 0 20px;
+  font-size: 32px;
   color: white;
 }
+
 
 #datetime{
   color: #f1f1f1;
