@@ -1,35 +1,41 @@
-/* BODY & BACKGROUND */
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+/* 🔒 STOP PAGE MOVEMENT */
+body{
+  margin:0;
+  height:100vh;
+  overflow:hidden;          /* ❌ no scroll */
+  background: linear-gradient(135deg,#4facfe,#00f2fe);
   font-family: Arial, sans-serif;
 }
 
-/* 🔒 FIXED CENTER BOX */
-.container {
-  width: 400px;              /* bigger container */
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.25); /* glass effect */
-  border-radius: 25px;
-  text-align: center;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-  position: fixed;            /* FIXED IN MIDDLE */
+/* 🔒 FIXED & CENTERED WEATHER BOX */
+.container{
+  position: fixed;          /* 🔒 KEY LINE */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-}
-/* TITLE */
-.container h1 {
-  margin: 0 0 20px;
-  font-size: 32px;
-  color: white;
+  transform: translate(-50%, -50%);  /* exact center */
+  
+  width: 420px;             /* BIG BOX */
+  max-width: 90%;
+  padding: 30px;
+
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
+/* 🔒 STAY TUNED BELOW BOX */
+.stay-tuned{
+  position: fixed;          /* 🔒 FIXED ALSO */
+  top: calc(50% + 260px);   /* below box */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  }
 
 #datetime{
   color: #f1f1f1;
@@ -67,11 +73,5 @@ body {
   color: white;
   font-size: 18px;
 }
-/* OUTSIDE MESSAGE BELOW BOX */
-.stay-tuned {
-  margin-top: 20px;           /* distance from container box */
-  color: white;
-  text-align: center;
-  font-size: 18px;
-                               }
+
 
